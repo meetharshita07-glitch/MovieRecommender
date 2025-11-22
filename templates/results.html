@@ -6,15 +6,12 @@
 
   <style>
     body {
-      cursor: none;
-      background: linear-gradient(135deg, #e8fff0, #d9ffe9);
-      font-family: "Poppins", sans-serif;
       margin: 0;
       padding: 0;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      font-family: "Poppins", sans-serif;
+      background: #e9fff1;
+      cursor: none;
+      padding-bottom: 40px;
     }
 
     .cursor-dot {
@@ -23,88 +20,78 @@
       background: #0090ff;
       border-radius: 50%;
       position: fixed;
-      transform: translate(-50%, -50%);
       pointer-events: none;
       z-index: 9999;
-    }
-
-    .container {
-      margin-top: 70px;
-      padding: 30px 40px;
-      width: 850px;
-      background: #fff;
-      border-radius: 20px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-      animation: fadeIn 1s ease-out;
+      transform: translate(-50%, -50%);
     }
 
     h2 {
-      color: #007d3a;
-      font-size: 32px;
       text-align: center;
+      margin-top: 45px;
+      font-size: 36px;
+      color: #00863f;
+      font-weight: 800;
     }
 
     .movie-card {
-      background: #eafff2;
-      border: 2px solid #00c357;
-      margin-top: 20px;
-      padding: 18px 20px;
-      border-radius: 14px;
-      transition: 0.3s;
+      width: 85%;
+      margin: 20px auto;
+      padding: 20px 25px;
+      background: #f1fff7;
+      border: 3px solid #00c357;
+      border-radius: 18px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      animation: fadeSlide 0.6s ease forwards;
+      opacity: 0;
     }
 
-    .movie-card:hover {
-      transform: translateY(-4px) scale(1.02);
-      background: #d9ffe9;
-      box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    .title {
-      font-size: 22px;
+    .movie-title {
+      font-size: 24px;
       font-weight: 700;
-      color: #004d26;
+      color: #006b36;
+      margin-bottom: 6px;
     }
 
-    .tiny {
-      font-size: 14px;
-      color: #333;
-      margin-top: 3px;
-    }
-
-    .desc {
-      margin-top: 10px;
+    .meta {
       font-size: 15px;
       color: #444;
-      line-height: 1.4;
+      margin: 6px 0 10px;
     }
 
-    .button-group {
+    .description {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.5;
+      margin-top: 4px;
+    }
+
+    /* Buttons */
+    .buttons {
+      text-align: center;
       margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
     }
 
-    button {
-      padding: 13px 20px;
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      margin: 0 12px;
       background: #00c357;
-      border: none;
-      border-radius: 10px;
       color: white;
-      font-size: 17px;
-      cursor: pointer;
+      border-radius: 12px;
+      font-size: 18px;
+      text-decoration: none;
       transition: 0.3s;
       font-weight: 600;
     }
 
-    button:hover {
-      background: #009c49;
+    .btn:hover {
+      background: #009e43;
       transform: scale(1.05);
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -113,40 +100,40 @@
 
 <div class="cursor-dot" id="cursor"></div>
 
-<div class="container">
+<h2>🎬 Your Movie Recommendations</h2>
 
-  <h2>🎬 Your Movie Recommendations</h2>
+{% for movie in movies %}
+<div class="movie-card" style="animation-delay: {{ loop.index * 0.15 }}s">
 
-  {% for m in movies %}
-  <div class="movie-card">
-    <div class="title">{{ m.title }} ({{ m.year }})</div>
+  <div class="movie-title">{{ movie.title }} ({{ movie.year }})</div>
 
-    <div class="tiny">
-      ⭐ Rating: {{ m.rating }} |
-      💥 Popularity: {{ m.popularity }} |
-      🎭 Actors: {{ m.actors | join(', ') }}
-    </div>
-
-    <div class="desc">
-      {{ m.description }}
-    </div>
+  <div class="meta">
+    ⭐ <b>Rating:</b> {{ movie.rating }} &nbsp; | &nbsp;
+    🔥 <b>Popularity:</b> {{ movie.popularity }} &nbsp; | &nbsp;
+    🎭 <b>Actors:</b> {{ movie.actors }}
   </div>
-  {% endfor %}
 
-  <div class="button-group">
-    <button onclick="window.location.href='/'">🏠 Back to Home</button>
-    <button onclick="window.location.href='/selections'">🎛 Back to Selections</button>
+  <div class="description">
+    📌 {{ movie.description }}
   </div>
 
 </div>
+{% endfor %}
+
+<div class="buttons">
+  <a href="/" class="btn">🏠 Back to Home</a>
+  <a href="/selections" class="btn">🎞 Back to Selections</a>
+</div>
 
 <script>
+  /* Blue cursor */
   const cursor = document.getElementById("cursor");
-  document.addEventListener("mousemove", e => {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.pageX + "px";
+    cursor.style.top = e.pageY + "px";
   });
 </script>
 
 </body>
 </html>
+
