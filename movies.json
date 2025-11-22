@@ -2,261 +2,243 @@
   {
     "title": "Inception",
     "industry": "Hollywood",
-    "genres": [
-      "Thriller",
-      "Sci-Fi"
-    ],
+    "genres": ["Thriller", "Sci-Fi"],
     "rating": 8.8,
     "popularity": 12,
     "year": 2010,
-    "duration": 148
+    "duration": 148,
+    "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
+    "description": "A thief enters dreams to steal secrets but faces a mission that blurs reality itself."
   },
   {
     "title": "Interstellar",
     "industry": "Hollywood",
-    "genres": [
-      "Sci-Fi",
-      "Adventure"
-    ],
+    "genres": ["Sci-Fi", "Adventure"],
     "rating": 8.6,
     "popularity": 11,
     "year": 2014,
-    "duration": 169
+    "duration": 169,
+    "actors": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
+    "description": "A team of astronauts journeys through a wormhole to save humanity from extinction."
   },
   {
     "title": "The Dark Knight",
     "industry": "Hollywood",
-    "genres": [
-      "Action",
-      "Thriller"
-    ],
+    "genres": ["Action", "Thriller"],
     "rating": 9.0,
     "popularity": 11,
     "year": 2008,
-    "duration": 152
+    "duration": 152,
+    "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+    "description": "Batman faces his deadliest foe, the Joker, in a battle for Gotham's soul."
   },
   {
     "title": "Titanic",
     "industry": "Hollywood",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
+    "genres": ["Romance", "Drama"],
     "rating": 7.9,
     "popularity": 10,
     "year": 1997,
-    "duration": 195
+    "duration": 195,
+    "actors": ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"],
+    "description": "A tender love story unfolds aboard the ill-fated RMS Titanic."
   },
   {
     "title": "The Conjuring",
     "industry": "Hollywood",
-    "genres": [
-      "Horror"
-    ],
+    "genres": ["Horror"],
     "rating": 7.5,
     "popularity": 8,
     "year": 2013,
-    "duration": 112
+    "duration": 112,
+    "actors": ["Patrick Wilson", "Vera Farmiga", "Lili Taylor"],
+    "description": "Paranormal investigators help a family tormented by a dark presence."
   },
   {
     "title": "A Quiet Place",
     "industry": "Hollywood",
-    "genres": [
-      "Horror",
-      "Thriller"
-    ],
+    "genres": ["Horror", "Thriller"],
     "rating": 7.5,
     "popularity": 9,
     "year": 2018,
-    "duration": 90
+    "duration": 90,
+    "actors": ["Emily Blunt", "John Krasinski", "Millicent Simmonds"],
+    "description": "A family survives in silence while hiding from sound-hunting creatures."
   },
   {
     "title": "Avatar",
     "industry": "Hollywood",
-    "genres": [
-      "Adventure",
-      "Sci-Fi"
-    ],
+    "genres": ["Adventure", "Sci-Fi"],
     "rating": 7.8,
     "popularity": 11,
     "year": 2009,
-    "duration": 162
+    "duration": 162,
+    "actors": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"],
+    "description": "A soldier explores an alien world and faces a choice between loyalty and justice."
   },
   {
     "title": "3 Idiots",
     "industry": "Bollywood",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
+    "genres": ["Comedy", "Drama"],
     "rating": 8.4,
     "popularity": 13,
     "year": 2009,
-    "duration": 170
+    "duration": 170,
+    "actors": ["Aamir Khan", "R. Madhavan", "Sharman Joshi"],
+    "description": "Three engineering students discover friendship, pressure, and purpose."
   },
   {
     "title": "Drishyam",
     "industry": "Bollywood",
-    "genres": [
-      "Thriller"
-    ],
+    "genres": ["Thriller"],
     "rating": 8.3,
     "popularity": 9,
     "year": 2015,
-    "duration": 163
+    "duration": 163,
+    "actors": ["Ajay Devgn", "Shriya Saran", "Tabu"],
+    "description": "A father goes to extreme lengths to protect his family after a crime."
   },
   {
     "title": "Andhadhun",
     "industry": "Bollywood",
-    "genres": [
-      "Mystery",
-      "Thriller"
-    ],
+    "genres": ["Mystery", "Thriller"],
     "rating": 8.2,
     "popularity": 8,
     "year": 2018,
-    "duration": 139
+    "duration": 139,
+    "actors": ["Ayushmann Khurrana", "Tabu", "Radhika Apte"],
+    "description": "A blind pianist becomes entangled in a murder he never saw coming."
   },
   {
     "title": "Tumbbad",
     "industry": "Bollywood",
-    "genres": [
-      "Horror",
-      "Thriller"
-    ],
+    "genres": ["Horror", "Thriller"],
     "rating": 8.1,
     "popularity": 7,
     "year": 2018,
-    "duration": 104
+    "duration": 104,
+    "actors": ["Sohum Shah", "Mohammad Samad"],
+    "description": "A man's greed leads him to a cursed treasure guarded by a dark deity."
   },
   {
     "title": "Hera Pheri",
     "industry": "Bollywood",
-    "genres": [
-      "Comedy"
-    ],
+    "genres": ["Comedy"],
     "rating": 8.2,
     "popularity": 12,
     "year": 2000,
-    "duration": 145
+    "duration": 145,
+    "actors": ["Akshay Kumar", "Suniel Shetty", "Paresh Rawal"],
+    "description": "Three men get involved in a hilarious chain of misunderstandings."
   },
   {
     "title": "Golmaal",
     "industry": "Bollywood",
-    "genres": [
-      "Comedy"
-    ],
+    "genres": ["Comedy"],
     "rating": 7.8,
     "popularity": 7,
     "year": 2006,
-    "duration": 150
+    "duration": 150,
+    "actors": ["Ajay Devgn", "Arshad Warsi", "Tusshar Kapoor"],
+    "description": "A fun-filled chaos erupts when four friends land in trouble."
   },
   {
     "title": "Bahubali",
     "industry": "Tollywood",
-    "genres": [
-      "Adventure",
-      "Drama"
-    ],
+    "genres": ["Adventure", "Drama"],
     "rating": 8.2,
     "popularity": 11,
     "year": 2015,
-    "duration": 159
+    "duration": 159,
+    "actors": ["Prabhas", "Rana Daggubati", "Anushka Shetty"],
+    "description": "A kingdom’s fate hangs between two brothers in an epic tale of power."
   },
   {
     "title": "RRR",
     "industry": "Tollywood",
-    "genres": [
-      "Action",
-      "Adventure"
-    ],
+    "genres": ["Action", "Adventure"],
     "rating": 8.0,
     "popularity": 10,
     "year": 2022,
-    "duration": 187
+    "duration": 187,
+    "actors": ["Ram Charan", "Jr NTR", "Alia Bhatt"],
+    "description": "Two revolutionaries unite to fight colonial oppression in breathtaking style."
   },
   {
     "title": "Sita Ramam",
     "industry": "Tollywood",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
+    "genres": ["Romance", "Drama"],
     "rating": 8.1,
     "popularity": 7,
     "year": 2022,
-    "duration": 126
+    "duration": 126,
+    "actors": ["Dulquer Salmaan", "Mrunal Thakur", "Rashmika Mandanna"],
+    "description": "A soldier receives a mysterious love letter that changes his life forever."
   },
   {
     "title": "KGF",
     "industry": "Kollywood",
-    "genres": [
-      "Action",
-      "Adventure"
-    ],
+    "genres": ["Action", "Adventure"],
     "rating": 8.0,
     "popularity": 10,
     "year": 2018,
-    "duration": 155
+    "duration": 155,
+    "actors": ["Yash", "Srinidhi Shetty", "Anant Nag"],
+    "description": "A boy rises from poverty to become a feared warrior in Kolar Gold Fields."
   },
   {
     "title": "Kantara",
     "industry": "Kollywood",
-    "genres": [
-      "Mystery",
-      "Drama"
-    ],
+    "genres": ["Mystery", "Drama"],
     "rating": 8.3,
     "popularity": 8,
     "year": 2022,
-    "duration": 148
+    "duration": 148,
+    "actors": ["Rishab Shetty", "Kishore", "Sapthami Gowda"],
+    "description": "Folklore and mystery collide when a village faces supernatural unrest."
   },
   {
     "title": "2018",
     "industry": "Mollywood",
-    "genres": [
-      "Drama",
-      "Thriller"
-    ],
+    "genres": ["Drama", "Thriller"],
     "rating": 8.5,
     "popularity": 7,
     "year": 2023,
-    "duration": 150
+    "duration": 150,
+    "actors": ["Tovino Thomas", "Tanvi Ram", "Kunchacko Boban"],
+    "description": "A gripping story of courage during Kerala’s devastating floods."
   },
   {
     "title": "Bangalore Days",
     "industry": "Mollywood",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
+    "genres": ["Comedy", "Drama"],
     "rating": 8.3,
     "popularity": 8,
     "year": 2014,
-    "duration": 171
+    "duration": 171,
+    "actors": ["Nivin Pauly", "Nazriya Nazim", "Fahadh Faasil"],
+    "description": "Three cousins chase dreams, love, and life in bustling Bangalore."
   },
   {
     "title": "Kirik Party",
     "industry": "Sandalwood",
-    "genres": [
-      "Comedy",
-      "Romance"
-    ],
+    "genres": ["Comedy", "Romance"],
     "rating": 8.4,
     "popularity": 8,
     "year": 2016,
-    "duration": 165
+    "duration": 165,
+    "actors": ["Rakshit Shetty", "Rashmika Mandanna", "Samyuktha Hegde"],
+    "description": "A lively engineering college romance filled with youthful charm."
   },
   {
     "title": "Ugramm",
     "industry": "Sandalwood",
-    "genres": [
-      "Action",
-      "Thriller"
-    ],
+    "genres": ["Action", "Thriller"],
     "rating": 8.2,
     "popularity": 6,
     "year": 2014,
-    "duration": 153
+    "duration": 153,
+    "actors": ["Sri Murali", "Thilak Shekar", "Haripriya"],
+    "description": "A man confronts his violent past to save a woman caught in danger."
   }
 ]
